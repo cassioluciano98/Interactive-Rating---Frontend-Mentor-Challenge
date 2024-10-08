@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Overpass", sans-serif;
+}
+
+body {
+    background-color: #141518;
+}
+
+main {
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(to bottom right, #1A222C, #181E28);
+    border-radius: 25PX;
+    margin: 20% auto;
+}
+
+.rate-select, .thank-you {
+    display: none;
+    padding: 40px;
+}
+
+.active {
+    display: block;
+}
+
+.thank-you {
+    text-align: center;
+}
+
+.thank-you img {
+    width: 190px;
+}
+
+.thank-you .your-choice {
+    background-color: #262E38;
+    width: 220px;
+    margin: 25px auto;
+    border-radius: 25px;
+    padding-top: 3px;
+    color: #ce610d;
+    font-size: 16px;
+}
+
+.thank-you h1 {
+    color: #fff;
+    margin-top: 40px;
+}
+
+.thank-you p {
+    color: #959eac;
+    font-size: 18.5px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+
+.rate-select img {
+    width: 50px;
+    border-radius: 50%;
+    padding: 16px;
+    background-color: #2c3541;
+}
+
+.rate-select h1 {
+    margin-top: 40px;
+    color: #fff;
+}
+
+.rate-select p {
+    color: #959eac;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.rating-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #959eac;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.circle:hover {
+    background-color: #f47c2d;
+    color: #121417;
+}
+
+.circle.selected {
+    background-color: #fff; 
+}
+
+#submit {
+    width: 100%;
+    height: 50px;
+    background-color: #f47c2d;
+    color: #121417;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+}
+
+#submit:hover {
+    background-color: #fff;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: #fff;
+}
+    
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 720px) {
+    main {
+        width: 350px;
+        height: 450px;
+        margin-top: 25%;
+    }
+
+    .rate-select, .thank-you {
+        padding: 30px;
+    }
+
+    .thank-you h1, .rate-select h1 {
+        font-size: 25px;
+    }
+
+    .thank-you p, .rate-select p {
+        font-size: 14px;
+    }
+
+    .circle {
+        width: 45px;
+        height: 45px;
+        font-size: 14px;
+    }
+
+    #submit {
+        font-size: 16px;
+    }
+
+}
