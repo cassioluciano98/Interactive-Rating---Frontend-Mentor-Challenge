@@ -9,6 +9,11 @@
 
 body {
     background-color: #141518;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 main {
@@ -16,7 +21,6 @@ main {
     height: 500px;
     background: linear-gradient(to bottom right, #1A222C, #181E28);
     border-radius: 25PX;
-    margin: 20% auto;
 }
 
 .rate-select, .thank-you {
@@ -129,6 +133,7 @@ main {
 }
 
 .attribution { 
+    margin-top: 10em;
     font-size: 11px; 
     text-align: center; 
     color: #fff;
